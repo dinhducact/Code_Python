@@ -239,3 +239,7 @@ print(dic)
 dic.update(nam='Vũ Đình Đức',age =20)
 print(dic)
 print(dic)
+dsfjkhsadjf
+adsijfglasjdf
+ádfhasdf
+áduhfa
