@@ -238,3 +238,4 @@ print(dic)
 #update của dic 
 dic.update(nam='Vũ Đình Đức',age =20)
 print(dic)
+print(dic)
