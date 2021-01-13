@@ -1,0 +1,23 @@
+import sqlite3
+connection = sqlite3.connect("C:/Users/DELL/OneDrive/Máy tính/python/sql_sinhvien/monhoc.sqlite")
+crsr=connection.cursor()
+# crsr.execute("drop table if exists sinhvien")
+# crsr.execute("CREATE TABLE sinhvien (id INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , name VARCHAR NOT NULL )")
+# crsr.execute("insert into sinhvien (name) values ( 'Vũ Đình Đức' )")
+# crsr.execute("insert into sinhvien (name) values ( 'Vũ Đình Vinh ' )")
+# crsr.execute("insert into sinhvien(name) values('Hà Thị Ngần ')")
+# crsr.execute("update monhoc set name ='toán rời rạc' where id =7")
+# crsr.execute("insert into monhoc values (9,'lap trinh mạng')")
+# crsr.execute("delete from monhoc where id = 7")
+# crsr.execute("Delete from monhoc WHERE name= lap trinh mạng")
+a=crsr.execute("SELECT * FROM monhoc order by id asc").fetchall()
+a2=dict(a)
+print("{:<20}{:<20}".format("id","name"))
+for i,k in a2.items():
+    print("{:<20}{:<20}".format(i,k))
+a3=list(a)
+print(a3)
+for row in a:
+    print(row)
+connection.commit()
+connection.close()
