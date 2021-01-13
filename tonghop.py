@@ -2,10 +2,13 @@ demo=input(str("Nhập Họ Và Tên "))
 #loại bỏ khoảng trắng ở đầu và cuối xâu 
 demo1=demo.strip()
 print(demo1)
+#chuyển đổi tất cả chữ trong chuỗi thành chữ thường 
 demo2=demo1.lower()
 print(demo2)
+#chuyển đổi tất cả chữ trong chuỗi thành chữ hoa
 demo3=demo1.upper()
 print(demo3)
+#tách chuỗi 
 demo4=demo1.split(" ")
 print(demo4)
 for i in demo4:
@@ -44,7 +47,7 @@ print(stre)
 ten=input(str("Nhập Họ Và Tên :"))
 ngaysing=input(str("Nhập ngày sinh  :"))
 truong=input(str("Nhập Trường :"))
-#có thể căn lền 
+#có thể căn lền với 3 cách khác nhau 
 doi='Thông Tin Sinh Viên  %20s'%(ten)
 print(doi)
 print('\n')
@@ -63,7 +66,7 @@ print(bai10a)
 print(bai10b)
 #list trong python giống chuỗi , các phần thử cách nhau bởi dấu phẩy
 bai12=int(input("Nhập số phần tử của mảng :"))
-# khởi tạo mảng bai12a với bai12 giá trị , khởi tạo i , i trong phạm vi từ 0 đến bai12 thì sẽ có từ 0 đến bai12-1 giá trị
+# khởi list bai12a với bai12 giá trị , khởi tạo i , i trong phạm vi từ 0 đến bai12 thì sẽ có từ 0 đến bai12-1 giá trị
 bai12a=[i for i in range(0,bai12)]
 for i in range(0,bai12):
     bai12a[i]=input(str("nhập thông tin :"))
@@ -138,6 +141,8 @@ print(bai13c)
  các phần thử của tuple được phân cách bằng dấu ,
  tuple có khả năng chứa mọi giá trị 
  tốc độ truy suất tuple nhanh hơn list
+ 
+ 
  dung lượng chiếm trong bộ nhớ nhỏ hơn list
  bảo vệ giữ liệu sẽ không bị thay đổi 
  có thể dùng làm key của dictionary"""
@@ -238,3 +243,23 @@ print(dic)
 #update của dic 
 dic.update(nam='Vũ Đình Đức',age =20)
 print(dic)
+
+
+#  thao tác với file trong python 
+try:
+    rf=open("C:/Users/DELL/OneDrive/Máy tính/cThaops3.png","rb")
+    wf=open("C:/Users/DELL/OneDrive/Máy tính/ghifilecthao2.png","wb")
+    buffersize=250000
+    buff=rf.read(buffersize)
+    i=0
+    while(len(buff)):
+        i+=1
+        wf.write(buff)
+        print(i, "  {} byte".format(len(buff))) 
+        buff=rf.read(buffersize)
+finally:
+    rf.close()
+    wf.close()
+"""đọc file thông thường có thể dùng with mặc định sẽ đóng luôn file """
+with open ("C:/Users/DELL/OneDrive/Máy tính/cThaops3.png","r",encoding= 'utf-8') as f :
+    pass

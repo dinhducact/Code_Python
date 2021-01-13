@@ -21,7 +21,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(3)
 	os.system("cls")
 
 
@@ -40,7 +40,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(3)
 	os.system("cls")
 
 	#3
@@ -58,7 +58,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(0.1)
 	os.system("cls")
 
 	#4
@@ -76,7 +76,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(3)
 	os.system("cls")
 
 	#5
@@ -94,7 +94,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(3)
 	os.system("cls")
 	
 
@@ -113,7 +113,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(1)
+	#time.sleep(3)
 	os.system("cls")
 
 	#7
@@ -131,7 +131,7 @@ while True:
 		]
 		)
 	,file=stream)
-	time.sleep(3)
+	time.sleep(0.1)
 	os.system("cls")
 
 
@@ -169,7 +169,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(3)
+	#time.sleep(10)
 	os.system("cls")
 
 	#10
@@ -188,7 +188,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(3)
+	#time.sleep(10)
 	os.system("cls")
 
 	#9
@@ -206,7 +206,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(3)
+	#time.sleep(10)
 	os.system("cls")
 
 	#10
@@ -263,7 +263,7 @@ while True:
 		]
 		)
 	,file=stream)
-	#time.sleep(3)
+	#time.sleep(7)
 	os.system("cls")
 
 
@@ -319,5 +319,5 @@ while True:
 		]
 		)
 	,file=stream)
-	time.sleep(3)
+	time.sleep(0.1)
 	os.system("cls")
